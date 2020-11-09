@@ -535,7 +535,7 @@ a {
 }
 
 .hotel-title-link:active .hotel-title {
-  opacity: 0.3;;
+  opacity: 0.3;
 }
 
 .hotel-type-wrapper {
@@ -1012,7 +1012,7 @@ a {
   color: var(--basic-white-0-3);
 }
 
-/* Map */
+  /* Map */
 
 .map-route {
 	width: 100%;
@@ -1231,7 +1231,7 @@ a {
   color: var(--basic-black);
 }
 
-/* Animations */
+  /* Animations */
 
 @keyframes animation-form {
 10% {
