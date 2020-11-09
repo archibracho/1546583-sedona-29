@@ -1,3 +1,11 @@
+  /*
+    * Prefixed by https://autoprefixer.github.io
+    * PostCSS: v7.0.29,
+    * Autoprefixer: v9.7.6
+    * Browsers: last 2 version,not dead,not ie <= 11
+  */
+  
+  
   /* Fonts */
 
 @font-face {
@@ -80,6 +88,7 @@
 .page-body {
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start; /* Выравнивание контента к верху */
   margin: 0;
@@ -556,6 +565,7 @@ a {
 
 .button-wrapper {
   display: grid;
+  grid-template-columns: -webkit-min-content -webkit-min-content;
   grid-template-columns: min-content min-content;
   grid-gap: 6px;
   margin-top: 16px;
@@ -713,7 +723,7 @@ a {
   margin-right: 0;
 }
 
-.social a {
+.social-link {
   background-color: var(--basic-blue);
   width: 46px;
   height: 48px;
@@ -722,15 +732,15 @@ a {
   align-items: center; /* Иконки по заданным размерам */
 }
 
-.social a:hover {
+.social-link:hover {
   background-color: var(--grayish-blue);
 }
 
-.social a:active {
+.social-link:active {
   background-color: var(--dark-blue);
 }
 
-.social a:active img {
+.social-link:active img {
   opacity: 0.3;
 }
 
@@ -747,19 +757,19 @@ a {
   margin-right: 8px;
 }
 
-.logo-author a {
+.logo-author-link {
   margin-top: 5px;
 }
 
-.logo-author a:hover path {
+.logo-author-link:hover path {
   fill: var(--basic-blue);
 }
 
-.logo-author a:active path {
+.logo-author-link:active path {
   fill: var(--basic-light-grey);
 }
 
-/* Forms */
+  /* Forms */
 
 .hotel-search-button {
   display: flex;
@@ -789,7 +799,8 @@ a {
 
 .hotels-search-form-close {
   display: none;
-  animation: animation-form 0.8s;
+  -webkit-animation: animation-form 0.8s;
+          animation: animation-form 0.8s;
 }
 
 .hotel-search-button:hover {
@@ -813,7 +824,8 @@ a {
   box-sizing: border-box;
   background-color: var(--basic-white);
   box-shadow: 0 7px 15px 0 var(--basic-black-0-15);
-  animation: animation-form 0.9s;
+  -webkit-animation: animation-form 0.9s;
+          animation: animation-form 0.9s;
 }
 
 .hotels-search-time,
@@ -1031,7 +1043,7 @@ a {
 	left: 0;
 }
 
-/* Filter form*/
+  /* Filter form*/
 
 .form-bg {
   background-image: url("../img/form-bg.jpg");
@@ -1067,10 +1079,6 @@ a {
   margin-left: auto;
 }
 
-.filter fieldset:nth-child(3) legend {
-  margin-bottom: 11px;
-}
-
 .filter ul {
   padding: 0;
   margin: 0;
@@ -1099,7 +1107,9 @@ a {
   font-size: 14px;
   font-weight: normal;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .input-checkbox + label::before {
@@ -1234,11 +1244,11 @@ a {
   /* Animations */
 
 @keyframes animation-form {
-10% {
-  transform: translateY(10px);
+  10% {
+    transform: translateY(10px);
 }
 
-100% {
-  transform: translateY(1px);
+  100% {
+    transform: translateY(1px);
   }
 }
