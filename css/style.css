@@ -1101,6 +1101,10 @@ a {
   margin-bottom: 24px;
 }
 
+.filter .range-title {
+  margin-bottom: 11px;
+}
+
 .filter label {
   display: block;
   position: relative;
